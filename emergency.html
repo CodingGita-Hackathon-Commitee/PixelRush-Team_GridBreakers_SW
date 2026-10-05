@@ -26,11 +26,10 @@
         <h2 class="prompt-title">Select a Pet</h2>
     </section>
 
-    <!-- Pet Profile Cards -->
+   <!-- Pet Profile Cards -->
     <section class="pet-selection">
-        <!-- Bruno's Card -->
-        <!-- Update href to route to Bruno's specific help page later -->
-        <a href="help-bruno.html" class="pet-card bruno-card">
+        <!-- Bruno's Card -> Routes to symptoms.html -->
+        <a href="symptoms.html" class="pet-card bruno-card">
             <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=150&q=80" alt="Bruno the Golden Retriever" class="pet-avatar">
             <div class="pet-info">
                 <h3 class="pet-name">Bruno</h3>
@@ -43,14 +42,13 @@
             </div>
         </a>
 
-        <!-- Luna's Card -->
-        <!-- Update href to route to Luna's specific help page later -->
-        <a href="help-luna.html" class="pet-card luna-card">
-            <!-- Updated URL below with a highly reliable Husky photo. You can also swap 'src' to "luna.jpg" or "luna.png" if using local files -->
+        <!-- Luna's Card -> Routes to symptoms.html -->
+        <a href="symptoms.html" class="pet-card luna-card">
+            <!-- Using the highly reliable Husky photo with fallback -->
             <img src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?auto=format&fit=crop&q=80&w=150" alt="Luna the Siberian Husky" class="pet-avatar" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=150';">
             <div class="pet-info">
                 <h3 class="pet-name">Luna</h3>
-                <p class="pet-breed">Persian cat</p>
+                <p class="pet-breed">Siberian Husky</p>
                 <div class="pet-stats">
                     <span>🎂 2 yrs</span>
                     <span>⚖️ 18 kg</span>
