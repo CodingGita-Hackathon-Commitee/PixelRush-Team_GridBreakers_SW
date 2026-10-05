@@ -1,0 +1,247 @@
+/* Base Variables & Reset */
+:root {
+    --bg-color: #F8F6F0;
+    --primary-teal: #247566;
+    --primary-teal-dark: #1E6053;
+    --card-bg-light: #E4F1EE;
+    --text-dark: #2C2C2C;
+    --text-muted: #6C7270;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* iPhone 16 Frame Container */
+.iphone-frame {
+    width: 100%;
+    max-width: 393px;
+    height: 100vh;
+    max-height: 852px;
+    background-color: var(--bg-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Top Area & Back Button */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 24px 24px 10px 24px;
+    position: relative;
+}
+
+.circle-back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white);
+    border-radius: 50%;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: absolute;
+    left: 24px;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.circle-back-btn:active {
+    transform: scale(0.95);
+}
+
+.header-title {
+    color: var(--text-dark);
+    font-size: 1.15rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    line-height: 44px; /* Align to the Back Button Height */
+}
+
+/* Scrollable Content */
+.content-area {
+    flex: 1;
+    padding: 10px 24px 24px 24px;
+    overflow-y: auto;
+}
+
+/* Map Styling */
+.map-container {
+    width: 100%;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.map-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Section Title text */
+.results-header {
+    margin-bottom: 24px;
+}
+
+.results-count {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.results-subtitle {
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+/* Clinic Grid and List Items */
+.clinics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.clinic-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.clinic-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.marker-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+.marker-a { background-color: var(--primary-teal); }
+.marker-b, .marker-c { background-color: #6A777E; }
+
+.clinic-title-group {
+    flex: 1;
+}
+
+.clinic-name {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.clinic-distance {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.match-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background-color: transparent;
+}
+
+.inline-hide {
+    visibility: hidden;
+}
+
+.status-alert {
+    margin-left: 44px; /* indentation aligning with text */
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* tags design matching symptom details */
+.tags-row {
+    margin-left: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.tag {
+    background-color: #F4EFE3;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* Buttons selection state UI effects */
+.btn-select {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.98rem;
+    font-weight: 700;
+    padding: 14px 20px;
+    border-radius: 20px;
+    transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-select:active {
+    transform: scale(0.98);
+}
+
+/* Main primary teal button - Active Best Match */
+.primary-select {
+    background-color: var(--primary-teal);
+    color: var(--white);
+    box-shadow: 0 6px 12px rgba(36, 117, 102, 0.25);
+}
+
+.primary-select:active {
+    background-color: var(--primary-teal-dark);
+}
+
+/* White Outlined Button for other selections */
+.secondary-select {
+    background-color: var(--white);
+    color: var(--primary-teal);
+    border: 1.5px solid #EBEBEB;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.secondary-select:active {
+    opacity: 0.75;
+}

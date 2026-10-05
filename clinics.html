@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Matching Clinics</title>
+    <link rel="stylesheet" href="clinics.css">
+    <!-- Using Google Fonts and FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="iphone-frame">
+    
+    <!-- Top Area with Back Button & Title -->
+    <header class="header">
+        <a href="symptoms.html" class="circle-back-btn" aria-label="Back to symptoms page">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <h1 class="header-title">Matching Clinics</h1>
+    </header>
+
+    <!-- Scrollable Content -->
+    <div class="content-area">
+        
+        <!-- Simplified map illustration matching the design exactly -->
+        <div class="map-container">
+            <svg class="map-svg" viewBox="0 0 345 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- Map Background (Roads and Land) -->
+                <rect width="345" height="120" fill="#F4EFE3" rx="12"/>
+                <path d="M-10,40 L355,42 M-10,75 L355,72" stroke="#FFFFFF" stroke-width="6" fill="none"/>
+                <path d="M110,-10 L150,130 M240,-10 L220,130" stroke="#FFFFFF" stroke-width="6" fill="none"/>
+                
+                <!-- Shaded Land / Park Areas -->
+                <path d="M10,10 Q40,25 70,10 T100,20 L100,-10 L10,-10 Z" fill="#EAE1CD" opacity="0.6"/>
+                <path d="M260,90 Q290,110 330,95 L350,125 L240,125 Z" fill="#E1D5BD" opacity="0.6"/>
+
+                <!-- Map Marker: Route -->
+                <path d="M116,68 Q155,70 181,45" stroke="#247566" stroke-width="3" stroke-dasharray="2,3" fill="none"/>
+                <circle cx="116" cy="68" r="4" fill="#F8F6F0" stroke="#247566" stroke-width="2.5"/>
+                
+                <!-- Markers (A, B, C) matching original frame exactly -->
+                <!-- Marker A -->
+                <circle cx="190" cy="38" r="11" fill="#247566"/>
+                <text x="190" y="42" font-family="'Inter', sans-serif" font-size="9" fill="#FFFFFF" font-weight="700" text-anchor="middle">A</text>
+                
+                <!-- Marker B -->
+                <circle cx="280" cy="58" r="10" fill="#6A777E"/>
+                <text x="280" y="61" font-family="'Inter', sans-serif" font-size="8" fill="#FFFFFF" font-weight="700" text-anchor="middle">B</text>
+
+                <!-- Marker C -->
+                <circle cx="78" cy="74" r="10" fill="#6A777E"/>
+                <text x="78" y="77" font-family="'Inter', sans-serif" font-size="8" fill="#FFFFFF" font-weight="700" text-anchor="middle">C</text>
+            </svg>
+        </div>
+
+        <!-- Section Title -->
+        <section class="results-header">
+            <h2 class="results-count">3 clinics open nearby</h2>
+            <p class="results-subtitle">Sorted by distance and triage availability for hurt paw</p>
+        </section>
+
+        <!-- Clinics Selection Cards -->
+        <div class="clinics-list">
+            
+            <!-- Clinic 1 (Card A - Best match, active color) -->
+            <div class="clinic-card flex-column">
+                <div class="clinic-header">
+                    <div class="marker-badge marker-a">A</div>
+                    <div class="clinic-title-group">
+                        <h3 class="clinic-name">Paws & Claws 24/7 Care</h3>
+                        <p class="clinic-distance">0.8 km · 6 min drive</p>
+                    </div>
+                    <span class="match-badge">Best match</span>
+                </div>
+
+                <p class="status-alert">Ready for walk-in</p>
+
+                <div class="tags-row">
+                    <span class="tag">Emergency rate</span>
+                    <span class="tag">X-ray on site</span>
+                    <span class="tag">Orthopedic vet</span>
+                </div>
+
+                <!-- Update href here with your target selection/confirmation page -->
+                <a href="booking-confirmation.html" class="btn-select primary-select">Select this clinic</a>
+            </div>
+
+            <!-- Clinic 2 (Card B - Unselected Variant) -->
+            <div class="clinic-card flex-column">
+                <div class="clinic-header">
+                    <div class="marker-badge marker-b">B</div>
+                    <div class="clinic-title-group">
+                        <h3 class="clinic-name">Starlight Pet Emergency</h3>
+                        <p class="clinic-distance">1.2 km · 9 min drive</p>
+                    </div>
+                    <span class="match-badge inline-hide">Best match</span>
+                </div>
+
+                <p class="status-alert">Ready for walk-in</p>
+
+                <div class="tags-row">
+                    <span class="tag">Emergency rate</span>
+                    <span class="tag">X-ray on site</span>
+                    <span class="tag">Orthopedic vet</span>
+                </div>
+
+                <!-- Update href here with your target selection/confirmation page -->
+                <a href="booking-confirmation.html" class="btn-select secondary-select">Select this clinic</a>
+            </div>
+
+            <!-- Clinic 3 (Card C - Unselected Variant) -->
+            <div class="clinic-card flex-column">
+                <div class="clinic-header">
+                    <div class="marker-badge marker-c">C</div>
+                    <div class="clinic-title-group">
+                        <h3 class="clinic-name">Beacon Veterinary Center</h3>
+                        <p class="clinic-distance">2.4 km · 14 min drive</p>
+                    </div>
+                    <span class="match-badge inline-hide">Best match</span>
+                </div>
+
+                <p class="status-alert">Ready for walk-in</p>
+
+                <div class="tags-row">
+                    <span class="tag">Emergency rate</span>
+                    <span class="tag">X-ray on site</span>
+                    <span class="tag">Orthopedic vet</span>
+                </div>
+
+                <!-- Update href here with your target selection/confirmation page -->
+                <a href="booking-confirmation.html" class="btn-select secondary-select">Select this clinic</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
