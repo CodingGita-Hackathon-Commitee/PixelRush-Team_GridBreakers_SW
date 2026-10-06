@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Symptoms</title>
+    <link rel="stylesheet" href="symptoms.css">
+    <!-- Using Google Fonts and FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="iphone-frame">
+    
+    <!-- Top Area with Back Button -->
+    <div class="top-bar">
+        <a href="emergency.html" class="circle-back-btn" aria-label="Back to emergency page">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="content-area">
+        <h1 class="page-title">What are you noticing?</h1>
+        <p class="page-subtitle">Pick the closest match. We'll share this with the clinic so they can prepare.</p>
+
+        <!-- Symptoms Grid (Multi-select enabled via checkboxes) -->
+        <div class="symptoms-grid">
+            
+            <div class="symptom-item">
+                <input type="checkbox" id="symp-eating" name="symptom" value="not-eating">
+                <label for="symp-eating" class="symptom-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span>Not eating or Drinking</span>
+                </label>
+            </div>
+
+            <div class="symptom-item">
+                <input type="checkbox" id="symp-vomiting" name="symptom" value="vomiting">
+                <label for="symp-vomiting" class="symptom-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span>Vomiting or upset tummy</span>
+                </label>
+            </div>
+
+            <div class="symptom-item">
+                <input type="checkbox" id="symp-breathing" name="symptom" value="breathing">
+                <label for="symp-breathing" class="symptom-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span>Breathing heavily</span>
+                </label>
+            </div>
+
+            <div class="symptom-item">
+                <input type="checkbox" id="symp-eye" name="symptom" value="eye-ear">
+                <label for="symp-eye" class="symptom-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span>Eye or ear issue</span>
+                </label>
+            </div>
+
+            <!-- Centered bottom card -->
+            <div class="symptom-item full-width-center">
+                <input type="checkbox" id="symp-wounded" name="symptom" value="wounded">
+                <label for="symp-wounded" class="symptom-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span>Wounded</span>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Action Footer -->
+    <div class="bottom-footer">
+        <div class="location-bar">
+            <div class="location-text">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Indiranagar, 100ft Rd</span>
+            </div>
+            <!-- Update href to your location changing page -->
+            <a href="location.html" class="btn-change">Change</a>
+        </div>
+
+        <!-- Update href to your clinics listing page -->
+        <a href="clinics.html" class="btn-primary">Find Nearby clinics</a>
+    </div>
+
+</div>
+
+</body>
+</html>
