@@ -1,0 +1,290 @@
+:root {
+    --primary-teal: #1B5E55;
+    --primary-teal-dark: #144740;
+    --accent-bg: #F5F3EC;
+    --card-bg: #FFFFFF;
+    --button-tint: #E2ECE9;
+    --text-main: #1A1A1A;
+    --text-muted: #555555;
+    --border-color: #E8E5DC;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
+    --shadow-button: 0 8px 20px rgba(27, 94, 85, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #EAE6DF;
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Mobile Container Frame (Without outer device border) */
+.mobile-frame {
+    width: 100%;
+    max-width: 414px;
+    background-color: var(--accent-bg);
+    border-radius: 36px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Scrollable Content Area */
+.content-area {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scrollbar-width: none; /* Firefox */
+}
+
+.content-area::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Top Navigation Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.back-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-subtle);
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #F0EDE6;
+}
+
+.header-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-align: center;
+    flex-grow: 1;
+    margin-right: 44px;
+}
+
+/* Cards Styling */
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-subtle);
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+/* Visit Summary Hero Styles */
+.summary-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.summary-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #E2ECE9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.paw-large {
+    font-size: 2.2rem;
+    color: var(--primary-teal);
+}
+
+.summary-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.summary-subtext {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* Care Summary Card */
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.main-row {
+    margin-bottom: 4px;
+}
+
+.row-label-bold {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.row-value-bold {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.summary-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 4px 0;
+}
+
+.row-label {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.row-value {
+    color: var(--text-main);
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Prescription Card */
+.prescription-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.prescription-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.prescription-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-tint);
+    color: var(--primary-teal);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.prescription-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+
+.prescription-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.view-pdf-btn {
+    width: 100%;
+    background-color: var(--button-tint);
+    color: var(--primary-teal);
+    border: none;
+    padding: 12px;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.view-pdf-btn:hover {
+    background-color: #D2E3DF;
+}
+
+/* Bottom Footer Action */
+.footer-action {
+    padding: 16px 20px 24px 20px;
+    background-color: var(--accent-bg);
+    border-top: 1px solid rgba(0,0,0,0.03);
+}
+
+.confirm-btn {
+    width: 100%;
+    background-color: var(--primary-teal);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
+}
+
+.confirm-btn:hover {
+    background-color: var(--primary-teal-dark);
+}
+
+.confirm-btn:active {
+    transform: scale(0.98);
+}
+
+/* Fullscreen on smaller mobile screens */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        background-color: var(--accent-bg);
+    }
+    .mobile-frame {
+        max-width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .content-area {
+        max-height: calc(100vh - 90px);
+    }
+}
