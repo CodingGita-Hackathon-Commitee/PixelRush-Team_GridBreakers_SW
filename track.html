@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Track Journey</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Separate Stylesheet -->
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+
+    <div class="mobile-frame">
+        <!-- Scrollable Content Area -->
+        <div class="content-area">
+            
+            <!-- Header (Back button goes to review.html) -->
+            <div class="header">
+                <button class="back-btn" onclick="location.href='review.html'">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <!-- Team Standing By Card -->
+            <div class="card standing-card">
+                <div class="standing-info">
+                    <div class="clinic-category">Team standing by</div>
+                    <div class="clinic-name">Paws & Claws 24/7 Care</div>
+                    <div class="clinic-address">0.8 km · Estimated arrival in 6 min</div>
+                </div>
+                <button class="phone-icon-btn">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+
+            <!-- Timeline Tracking Section -->
+            <div class="timeline-container">
+                
+                <!-- Step 1: Completed -->
+                <div class="timeline-item completed">
+                    <div class="timeline-icon-col">
+                        <div class="node-icon teal-node"><i class="fa-solid fa-check"></i></div>
+                        <div class="timeline-connector"></div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-title-row">
+                            <span class="timeline-heading">Request sent</span>
+                            <span class="timeline-time">10:42 AM</span>
+                        </div>
+                        <p class="timeline-desc">Shared symptom details with clinic</p>
+                    </div>
+                </div>
+
+                <!-- Step 2: Completed -->
+                <div class="timeline-item completed">
+                    <div class="timeline-icon-col">
+                        <div class="node-icon teal-node"><i class="fa-solid fa-check"></i></div>
+                        <div class="timeline-connector"></div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-title-row">
+                            <span class="timeline-heading">Clinic confirmed</span>
+                            <span class="timeline-time">10:43 AM</span>
+                        </div>
+                        <p class="timeline-desc">Exam Room 2 reserved for Biscuit</p>
+                    </div>
+                </div>
+
+                <!-- Step 3: Active -->
+                <div class="timeline-item active">
+                    <div class="timeline-icon-col">
+                        <div class="node-icon yellow-node"><i class="fa-solid fa-location-arrow"></i></div>
+                        <div class="timeline-connector"></div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-title-row">
+                            <span class="timeline-heading">On the way</span>
+                            <span class="active-badge">Active</span>
+                        </div>
+                        <p class="timeline-desc">Drive safely. Follow directions via 100ft Road.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4: Pending -->
+                <div class="timeline-item pending">
+                    <div class="timeline-icon-col">
+                        <div class="node-icon white-node"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="timeline-connector"></div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-title-row">
+                            <span class="timeline-heading">Arrived at clinic</span>
+                        </div>
+                        <p class="timeline-desc">Check in at reception desk upon arrival.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5: Pending (Last) -->
+                <div class="timeline-item pending">
+                    <div class="timeline-icon-col">
+                        <div class="node-icon white-node"><i class="fa-solid fa-user-doctor"></i></div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-title-row">
+                            <span class="timeline-heading">Consultation started</span>
+                        </div>
+                        <p class="timeline-desc">Dr. Ananya Sharma assigned</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sticky Footer Action (Opens complete.html) -->
+        <div class="footer-action">
+            <button class="confirm-btn" onclick="location.href='complete.html'">
+                Arrived & Complete Visit
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
