@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Visit Summary</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Separate Stylesheet -->
+    <link rel="stylesheet" href="complete.css">
+</head>
+<body>
+
+    <div class="mobile-frame">
+        <!-- Scrollable Content Area -->
+        <div class="content-area">
+            
+            <!-- Header (Back button goes to track.html) -->
+            <div class="header">
+                <button class="back-btn" onclick="location.href='track.html'">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <h1 class="header-title">Visit Summary</h1>
+            </div>
+
+            <!-- Success Hero Illustration Area -->
+            <div class="summary-hero">
+                <div class="summary-circle">
+                    <i class="fa-solid fa-paw paw-large"></i>
+                </div>
+                <h2 class="summary-heading">Bruno is all taken care of</h2>
+                <p class="summary-subtext">Exam completed at Paws & Claws 24/7 Care</p>
+            </div>
+
+            <!-- Care Summary Card -->
+            <div class="card summary-card">
+                <div class="summary-row main-row">
+                    <span class="row-label-bold">Care Summary</span>
+                    <span class="row-value-bold">Completed</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-row">
+                    <span class="row-label">Attending Vet</span>
+                    <span class="row-value">Dr. Ananya Sharma</span>
+                </div>
+                <div class="summary-row">
+                    <span class="row-label">Diagnosis</span>
+                    <span class="row-value">Minor paw sprain</span>
+                </div>
+                <div class="summary-row">
+                    <span class="row-label">Treatment</span>
+                    <span class="row-value">Soothing balm & wrap</span>
+                </div>
+                <div class="summary-row">
+                    <span class="row-label">Recommended rest</span>
+                    <span class="row-value">3 days quiet recovery</span>
+                </div>
+            </div>
+
+            <!-- Digital Prescription Card -->
+            <div class="card prescription-card">
+                <div class="prescription-info">
+                    <div class="prescription-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div>
+                        <div class="prescription-title">Digital Prescription</div>
+                        <div class="prescription-subtitle">Saved to Biscuit's health vault</div>
+                    </div>
+                </div>
+                <button class="view-pdf-btn">View PDF</button>
+            </div>
+
+        </div>
+
+        <!-- Sticky Footer Action (Opens index.html) -->
+        <div class="footer-action">
+            <button class="confirm-btn" onclick="location.href='index.html'">
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
