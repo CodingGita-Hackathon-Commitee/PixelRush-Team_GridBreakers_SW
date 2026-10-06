@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Review Details</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Separate Stylesheet -->
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+
+    <div class="mobile-frame">
+        <!-- Scrollable Body Content -->
+        <div class="content-area">
+            
+            <!-- Header (Back button goes to emergency.html) -->
+            <div class="header">
+                <button class="back-btn" onclick="location.href='emergency.html'">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <h1 class="header-title">Review Details</h1>
+            </div>
+
+            <!-- Selected Clinic Card -->
+            <div class="card">
+                <div class="clinic-header">
+                    <div>
+                        <div class="clinic-category">Selected clinic</div>
+                        <div class="clinic-name">Paws & Claws 24/7 Care</div>
+                        <div class="clinic-address">12th Main, HAL 2nd Stage, Indiranagar</div>
+                    </div>
+                    <div class="clinic-badge">A</div>
+                </div>
+                <div class="clinic-actions">
+                    <button class="action-btn">
+                        <i class="fa-solid fa-phone"></i> Call clinic
+                    </button>
+                    <button class="action-btn">
+                        <i class="fa-solid fa-location-arrow"></i> Directions
+                    </button>
+                </div>
+            </div>
+
+            <!-- Notification Status Card -->
+            <div class="card notification-card">
+                <div class="notification-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="notification-content">
+                    <h3>We're notifying the team now</h3>
+                    <p>They will prepare the exam room and review Biscuit's medical history before you arrive.</p>
+                </div>
+            </div>
+
+            <!-- What to Bring Section Title -->
+            <h2 class="section-title">What to bring with you</h2>
+
+            <!-- Checklist Card -->
+            <div class="card checklist-card">
+                <div class="check-item">
+                    <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                    <span>Bruno's vaccination record</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                    <span>Favorite comfort blanket or toy</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                    <span>Any ongoing medications</span>
+                </div>
+            </div>
+
+            <!-- Helpful Tip Card -->
+            <div class="card tip-card">
+                <div class="tip-icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="tip-content">
+                    <strong>Helpful tip:</strong> Keep your pet secure and comfortable in a well-ventilated carrier or use a secure harness during travel.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sticky Footer Action (Opens track.html) -->
+        <div class="footer-action">
+            <button class="confirm-btn" onclick="location.href='track.html'">
+                Confirm & Start Journey
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
