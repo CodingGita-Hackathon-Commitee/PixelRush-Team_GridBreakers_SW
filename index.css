@@ -1,0 +1,285 @@
+/* Base Variables & Reset */
+:root {
+    --bg-color: #F8F6F0;
+    --primary-teal: #247566;
+    --primary-teal-dark: #1E6053;
+    --card-bg-light: #E4F1EE;
+    --text-dark: #2C2C2C;
+    --text-muted: #6C7270;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5; /* Darker background outside the phone frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* iPhone 16 Frame Container */
+.iphone-frame {
+    width: 100%;
+    max-width: 393px;
+    height: 100vh;
+    max-height: 852px;
+    background-color: var(--bg-color);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Adjusted padding to remove bottom spacing for the sticky nav */
+    padding: 24px 24px 0 24px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    background-color: var(--primary-teal);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    color: var(--text-dark);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Greeting */
+.greeting {
+    margin-bottom: 20px;
+}
+
+.greeting-time {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.greeting-name {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+.greeting-name .highlight {
+    color: var(--primary-teal);
+}
+
+/* Pet Card */
+.pet-card {
+    background-color: var(--primary-teal);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--white);
+    margin-bottom: 30px;
+    box-shadow: 0 8px 15px rgba(36, 117, 102, 0.2);
+}
+
+.pet-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.pet-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.pet-breed {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    margin-bottom: 8px;
+}
+
+.pet-stats {
+    display: flex;
+    gap: 12px;
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* Upcoming Care */
+.upcoming-care {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title i {
+    color: #A0A0A0;
+}
+
+.care-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.care-card {
+    background-color: var(--card-bg-light);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.care-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #CFE5E1;
+    color: #F5A623; /* pill color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.care-icon i.fa-scissors { color: #D0021B; } /* Adjusting icon colors to fit design */
+
+.care-details {
+    flex: 1;
+}
+
+.care-details h4 {
+    color: var(--primary-teal);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.care-details p {
+    color: var(--primary-teal);
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.care-date {
+    background-color: #CFE5E1;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Action Button */
+.action-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-emergency {
+    display: block;
+    background-color: var(--primary-teal);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(36, 117, 102, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-emergency:active {
+    transform: translateY(2px);
+    background-color: var(--primary-teal-dark);
+}
+
+.action-subtitle {
+    color: var(--primary-teal);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    /* Changed from absolute to sticky */
+    position: sticky;
+    bottom: 0;
+    /* Negative margins stretch it past the frame's 24px padding */
+    margin-left: -24px;
+    margin-right: -24px;
+    width: calc(100% + 48px);
+    
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px;
+    border-top: 1px solid #EBEBEB;
+    z-index: 100; /* Forces nav to stay above the scrolling content */
+    margin-top: 40px; /* Adds breathing room below the emergency button */
+}
+
+.nav-item {
+    color: #A0A0A0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-item:active, .nav-item:hover {
+    color: var(--primary-teal);
+}
+
+.nav-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+
+.nav-item.active .nav-avatar {
+    border-color: var(--primary-teal);
+}

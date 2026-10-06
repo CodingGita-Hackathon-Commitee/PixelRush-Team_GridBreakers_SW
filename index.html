@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Home</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Using Google Fonts (Inter) and FontAwesome for quick icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="iphone-frame">
+    
+    <!-- Logo Header -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+            <h1 class="logo-text">PawPal</h1>
+        </div>
+    </header>
+
+    <!-- Greeting Section -->
+    <section class="greeting">
+        <p class="greeting-time">Good evening ,</p>
+        <h2 class="greeting-name"><span class="highlight">Suzie's</span> PawPal</h2>
+    </section>
+
+    <!-- Pet Profile Card -->
+    <section class="pet-card">
+        <!-- Replace placeholder with actual dog image from your assets -->
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=150&q=80" alt="Bruno the Golden Retriever" class="pet-avatar">
+        <div class="pet-info">
+            <h3 class="pet-name">Bruno</h3>
+            <p class="pet-breed">Golden Retriever</p>
+            <div class="pet-stats">
+                <span>🎂 3 yrs</span>
+                <span>⚖️ 28 kg</span>
+                <span>♂ Male</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Care Section -->
+    <section class="upcoming-care">
+        <h3 class="section-title"><i class="fa-regular fa-calendar-check"></i> Upcoming Care:</h3>
+        
+        <div class="care-list">
+            <!-- Care Item 1 -->
+            <div class="care-card">
+                <div class="care-icon"><i class="fa-solid fa-capsules"></i></div>
+                <div class="care-details">
+                    <h4>Heartworm Medication</h4>
+                    <p>Monthly chewable</p>
+                </div>
+                <div class="care-date">Oct 8</div>
+            </div>
+
+            <!-- Care Item 2 -->
+            <div class="care-card">
+                <div class="care-icon"><i class="fa-solid fa-syringe"></i></div>
+                <div class="care-details">
+                    <h4>Rabies Vaccine Booster</h4>
+                    <p>Annual booster due</p>
+                </div>
+                <div class="care-date">Oct 12</div>
+            </div>
+
+            <!-- Care Item 3 -->
+            <div class="care-card">
+                <div class="care-icon"><i class="fa-solid fa-scissors"></i></div>
+                <div class="care-details">
+                    <h4>Grooming Appointment</h4>
+                    <p>Bath & nail trim</p>
+                </div>
+                <div class="care-date">Oct 15</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Button (Routes to second floor/emergency page) -->
+    <section class="action-section">
+        <!-- Change href to your actual next page, e.g., "emergency.html" -->
+        <a href="emergency.html" class="btn-emergency">My Pet Needs Help</a>
+        <p class="action-subtitle">Start Emergency Flow</p>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=50&q=80" alt="Profile" class="nav-avatar">
+        </a>
+        <a href="pets.html" class="nav-item">
+            <i class="fa-solid fa-dog"></i>
+        </a>
+        <a href="history.html" class="nav-item">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+        </a>
+        <a href="location.html" class="nav-item">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+    </nav>
+
+</div>
+
+</body>
+</html>
